@@ -1,0 +1,36 @@
+ @(message: String) @main("Welcome to Play") {
+
+<table style="border: 1px solid red">
+	<thead>table
+	</thead>
+	<div>
+		<tbody>
+			<tr>
+				<th>Column 1 Heading</th>
+				<th>Column 2 Heading</th>
+			</tr>
+			<tr>
+				<td>Row 1: Col 1</td>
+				<td>Row 1: Col 2</td>
+			</tr>
+		</tbody>
+	</div>
+	
+	<div>
+		<img ismap src="@routes.Assets.versioned("images/h_userhead.jpg")"
+			style="width: 100px; height: 100px; border: 1px solid green">
+	</div>
+	<div>
+		<form action="@routes.HomeController.addUser()" method="post">
+			<input type="text" name="username"><br> 
+			<input type="text" name="firstname"><br>
+			<input type="text" name="lastname"><br>
+			<input type="text" name="address"><br>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+
+</table>
+
+
+}
